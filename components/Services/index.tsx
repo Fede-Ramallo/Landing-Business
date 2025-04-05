@@ -1,30 +1,76 @@
-import styles from './Services.module.css';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link"; // ✅ agregado
+import styles from "./Services.module.css";
 
 const logos = [
-  { src: '/images/electricidad.png', alt: 'Logo para empresa A' },
-  { src: '/images/verduleria.png', alt: 'Logo para empresa B' },
-  { src: '/images/it.png', alt: 'Logo para empresa C' },
+  {
+    src: "/images/electricidad.png",
+    alt: "Logo para empresa A",
+    href: "https://gr-soluciones-electricas.netlify.app/",
+  },
+  {
+    src: "/images/verduleria.png",
+    alt: "Logo para empresa B",
+    href: "/empresas/verduleria",
+  },
+  { src: "/images/it.png", alt: "Logo para empresa C", href: "/empresas/it" },
 ];
 
-export default function Services() {
+const Services = () => {
   return (
-    <section className={styles.services}>
+    <motion.section
+      id="servicios"
+      className={styles.services}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className={styles.services__content}>
-        <h2 className={styles.services__title}>Servicios que ofrezco</h2>
+        <h2 className={styles.services__title}>Servicios</h2>
         <p className={styles.services__description}>
-          Me especializo en el diseño de landing pages profesionales para empresas, creación de logos e imágenes con IA,
-          y gestión de redes sociales con publicaciones semanales para maximizar tu presencia online.
+          Brindo soluciones visuales profesionales para emprendedores, marcas y
+          negocios.
         </p>
-        <div className={styles.services__cards}>
+
+        <ul className={styles.services__list}>
+          <li>
+            <span className={styles.services__badge}>1</span>
+            <strong>Diseño express:</strong> logos, flyers, banners generados
+            por IA y adaptados a tus necesidades.
+          </li>
+          <li>
+            <span className={styles.services__badge}>2</span>
+            <strong>Landing económica + diseño:</strong> sitio de una sola
+            página con diseño incluido, ideal para emprendedores.
+          </li>
+          <li>
+            <span className={styles.services__badge}>3</span>
+            <strong>Pack completo:</strong> incluye branding, sitio web
+            multi-página, soporte técnico y optimización SEO inicial.
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.examples}>
+        <h3 className={styles.examples__title}>Ejemplos de logos creados</h3>
+        <div className={styles.examples__grid}>
           {logos.map((logo, index) => (
-            <div key={index} className={styles.services__card}>
-              <Image src={logo.src} alt={logo.alt} width={200} height={200} />
-              <p className={styles.services__caption}>{logo.alt}</p>
-            </div>
+            <Link
+              href={logo.href}
+              key={index}
+              className={styles.examples__item}
+            >
+              <img src={logo.src} alt={logo.alt} />
+              <p>{logo.alt}</p>
+            </Link>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-}
+};
+
+export default Services;

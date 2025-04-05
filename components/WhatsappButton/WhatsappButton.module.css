@@ -1,15 +1,22 @@
 .whatsapp_button {
   position: fixed;
-  background: none;
   width: calc(162px / var(--retina-value));
   height: calc(162px / var(--retina-value));
   right: calc(52px / var(--retina-value));
   bottom: calc(68px / var(--retina-value));
   border-radius: 50%;
   z-index: 60;
-  background: #595754;
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.4);
+  background: var(--accent-3); /* Color turquesa llamativo */
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--accent-hover); /* Color salmón suave */
+    transform: scale(1.05);
+  }
 
   @media (--large) {
     width: 87px;
