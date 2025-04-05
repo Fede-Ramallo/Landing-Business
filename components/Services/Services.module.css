@@ -1,0 +1,61 @@
+.services {
+  padding: 4rem 2rem;
+  background-color: var(--white);
+  text-align: center;
+
+  &__content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: var(--font-tenor-sans);
+    color: var(--accent-2);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    font-family: var(--font-raleway);
+    color: var(--dark-grey);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+    & strong {
+      color: var(--accent-1);
+      font-weight: 700;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__card {
+    background-color: var(--cream);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 2px solid var(--accent-3);
+
+    &:hover {
+      transform: translateY(-5px);
+      background-color: var(--accent-hover);
+    }
+  }
+
+  &__caption {
+    margin-top: 0.75rem;
+    font-family: var(--font-raleway);
+    font-size: 1rem;
+    color: var(--accent-2);
+    font-weight: 600;
+  }
+}

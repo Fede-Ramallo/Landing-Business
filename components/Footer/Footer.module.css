@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(24px / var(--retina-value));
+  font-size: calc(28px / var(--retina-value));
+  color: #666;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eaeaea;
+  position: relative;
+  z-index: 10;
+
+  @media (--large) {
+    padding: 16px 32px;
+    font-size: 14px;
+  }
+}
+
+.left,
+.right {
+  display: block;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
