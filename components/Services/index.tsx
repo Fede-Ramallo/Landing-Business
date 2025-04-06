@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link"; // ✅ agregado
+import Link from "next/link";
+import Image from "next/image"; // ✅ usamos Image de Next.js
 import styles from "./Services.module.css";
 
 const logos = [
@@ -15,7 +16,11 @@ const logos = [
     alt: "Logo para empresa B",
     href: "/empresas/verduleria",
   },
-  { src: "/images/it.png", alt: "Logo para empresa C", href: "/empresas/it" },
+  {
+    src: "/images/it.png",
+    alt: "Logo para empresa C",
+    href: "/empresas/it",
+  },
 ];
 
 const Services = () => {
@@ -31,8 +36,9 @@ const Services = () => {
       <div className={styles.services__content}>
         <h2 className={styles.services__title}>Servicios</h2>
         <p className={styles.services__description}>
-          Brindo soluciones visuales profesionales para emprendedores, marcas y
-          negocios.
+          Brindo <strong>soluciones visuales profesionales</strong> para{" "}
+          <strong>emprendedores</strong>, <strong>marcas</strong> y{" "}
+          <strong>negocios</strong>.
         </p>
 
         <ul className={styles.services__list}>
@@ -63,7 +69,13 @@ const Services = () => {
               key={index}
               className={styles.examples__item}
             >
-              <img src={logo.src} alt={logo.alt} />
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={150}
+                height={150}
+                className={styles.examples__img}
+              />
               <p>{logo.alt}</p>
             </Link>
           ))}
