@@ -13,7 +13,7 @@ const logos = [
   },
   {
     src: "/images/verduleria.png",
-    alt: "Verduleria pelao",
+    alt: "Verduleria pelado",
     href: "/empresas/verduleria",
   },
   {
@@ -43,32 +43,37 @@ const Services = () => {
           y vender más.
         </p>
 
+        <p className={styles.services__description}>
+          Ofrezco <strong>soluciones digitales</strong> enfocadas en el diseño
+          visual, desarrollo web y presencia online, pensadas para{" "}
+          <strong>emprendedores y negocios</strong> que buscan destacar y vender
+          más.
+        </p>
+
         <ul className={styles.services__list}>
           <span className={styles.services__tag}>Rápido y personalizable</span>
           <li>
             <span className={styles.services__badge}>1</span>
             <strong>Diseño visual con IA:</strong> generación y personalización
-            de <strong>logotipos, banners y piezas gráficas</strong> mediante{" "}
-            <strong>inteligencia artificial</strong>, adaptadas para redes
-            sociales, campañas y branding profesional.
+            de logotipos, banners y piezas gráficas mediante inteligencia
+            artificial, adaptadas para redes sociales, campañas y branding
+            profesional.
           </li>
+
           <span className={styles.services__tag}>Ideal para lanzamientos</span>
           <li>
             <span className={styles.services__badge}>2</span>
-            <strong>Landing Page optimizada:</strong> desarrollo de una{" "}
-            <strong>landing page económica</strong> con diseño incluido, pensada
-            para <strong>captar leads</strong> o{" "}
-            <strong>lanzar productos y servicios</strong>.
+            <strong>Landing Page optimizada:</strong> desarrollo de una landing
+            page económica con diseño incluido, pensada para captar leads o
+            lanzar productos y servicios.
           </li>
+
           <span className={styles.services__tag}>Recomendado</span>
           <li>
             <span className={styles.services__badge}>3</span>
-            <strong>Pack digital completo:</strong> incluye{" "}
-            <strong>branding completo</strong>,{" "}
-            <strong>sitio web multi-página</strong>,{" "}
-            <strong>optimización SEO inicial</strong> y{" "}
-            <strong>soporte técnico básico</strong>. Ideal para marcas que
-            buscan una <strong>presencia sólida y escalable</strong>.
+            <strong>Pack digital completo:</strong> incluye branding, sitio web
+            multi-página, optimización SEO y soporte técnico básico. Ideal para
+            marcas que buscan una <strong>presencia sólida</strong>.
           </li>
         </ul>
       </div>

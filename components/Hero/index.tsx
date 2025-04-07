@@ -20,21 +20,20 @@ const Hero = () => {
         <h1 className={styles.hero__title}>
           Impulsá tu <strong>presencia digital</strong> al siguiente nivel
         </h1>
+
         <p className={styles.hero__slogan}>
           En <strong>Landings Córdoba</strong> nos especializamos en el
-          desarrollo de <strong>landing pages de alto rendimiento</strong>,
-          diseñadas para <strong>maximizar conversiones</strong> y captar{" "}
-          <strong>leads calificados</strong>.<br />
-          <br />
-          Utilizamos <strong>inteligencia artificial</strong> para crear{" "}
-          <strong>banners, logotipos y branding personalizado</strong> alineado
-          con tu marca.
+          desarrollo de landing pages de alto rendimiento, diseñadas para{" "}
+          <strong>maximizar conversiones</strong> y captar leads calificados.
           <br />
           <br />
-          Ofrecemos <strong>gestión de redes sociales</strong> con{" "}
-          <strong>estrategias semanales</strong> enfocadas en{" "}
-          <strong>crecimiento orgánico</strong> y aumento de{" "}
-          <strong>ventas reales</strong>.
+          Utilizamos <strong>inteligencia artificial</strong> para crear
+          banners, logotipos y branding alineado con tu marca.
+          <br />
+          <br />
+          Ofrecemos gestión de redes sociales con estrategias semanales
+          enfocadas en
+          <strong> crecimiento orgánico</strong> y aumento de ventas reales.
         </p>
 
         <a href="#contacto" className={styles.hero__cta}>
