@@ -6,7 +6,7 @@
   bottom: calc(68px / var(--retina-value));
   border-radius: 50%;
   z-index: 60;
-  background: var(--accent-3); /* Color turquesa llamativo */
+  background: var(--accent-2); /* Color turquesa llamativo */
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 300ms;
   display: flex;
@@ -32,8 +32,8 @@
     margin: 0 auto;
 
     @media (--large) {
-      width: 56px;
-      height: 57px;
+      width: 48px;
+      height: 49px;
     }
   }
 }

@@ -21,12 +21,22 @@ const Hero = () => {
           Impulsá tu <strong>presencia digital</strong> al siguiente nivel
         </h1>
         <p className={styles.hero__slogan}>
-          <strong>Desarrollador especializado</strong> en páginas de aterrizaje
-          <strong> efectivas</strong> para empresas. <br />
-          <strong>Diseños modernos</strong> y únicos con ayuda de la
-          <strong> inteligencia artificial</strong> para logos, banners y branding. <br />
-          <strong>Estrategias personalizadas</strong> de contenido para redes sociales que generan <strong>resultados reales</strong> semana a semana.
+          En <strong>Landings Córdoba</strong> nos especializamos en el
+          desarrollo de <strong>landing pages de alto rendimiento</strong>,
+          diseñadas para <strong>maximizar conversiones</strong> y captar{" "}
+          <strong>leads calificados</strong>.<br />
+          <br />
+          Utilizamos <strong>inteligencia artificial</strong> para crear{" "}
+          <strong>banners, logotipos y branding personalizado</strong> alineado
+          con tu marca.
+          <br />
+          <br />
+          Ofrecemos <strong>gestión de redes sociales</strong> con{" "}
+          <strong>estrategias semanales</strong> enfocadas en{" "}
+          <strong>crecimiento orgánico</strong> y aumento de{" "}
+          <strong>ventas reales</strong>.
         </p>
+
         <a href="#contacto" className={styles.hero__cta}>
           Quiero mejorar mi marca
         </a>

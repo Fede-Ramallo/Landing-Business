@@ -2,23 +2,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image"; // ✅ usamos Image de Next.js
+import Image from "next/image";
 import styles from "./Services.module.css";
 
 const logos = [
   {
     src: "/images/electricidad.png",
-    alt: "Logo para empresa A",
+    alt: "GR Soluciones Electricas",
     href: "https://gr-soluciones-electricas.netlify.app/",
   },
   {
     src: "/images/verduleria.png",
-    alt: "Logo para empresa B",
+    alt: "Verduleria pelao",
     href: "/empresas/verduleria",
   },
   {
     src: "/images/it.png",
-    alt: "Logo para empresa C",
+    alt: "Fergal Studio IT",
     href: "/empresas/it",
   },
 ];
@@ -36,26 +36,39 @@ const Services = () => {
       <div className={styles.services__content}>
         <h2 className={styles.services__title}>Servicios</h2>
         <p className={styles.services__description}>
-          Brindo <strong>soluciones visuales profesionales</strong> para{" "}
-          <strong>emprendedores</strong>, <strong>marcas</strong> y{" "}
-          <strong>negocios</strong>.
+          Ofrezco soluciones digitales enfocadas en el{" "}
+          <strong>diseño visual</strong>, <strong>desarrollo web</strong> y{" "}
+          <strong>presencia online</strong>, pensadas para{" "}
+          <strong>emprendedores, marcas y negocios</strong> que buscan destacar
+          y vender más.
         </p>
 
         <ul className={styles.services__list}>
+          <span className={styles.services__tag}>Rápido y personalizable</span>
           <li>
             <span className={styles.services__badge}>1</span>
-            <strong>Diseño express:</strong> logos, flyers, banners generados
-            por IA y adaptados a tus necesidades.
+            <strong>Diseño visual con IA:</strong> generación y personalización
+            de <strong>logotipos, banners y piezas gráficas</strong> mediante{" "}
+            <strong>inteligencia artificial</strong>, adaptadas para redes
+            sociales, campañas y branding profesional.
           </li>
+          <span className={styles.services__tag}>Ideal para lanzamientos</span>
           <li>
             <span className={styles.services__badge}>2</span>
-            <strong>Landing económica + diseño:</strong> sitio de una sola
-            página con diseño incluido, ideal para emprendedores.
+            <strong>Landing Page optimizada:</strong> desarrollo de una{" "}
+            <strong>landing page económica</strong> con diseño incluido, pensada
+            para <strong>captar leads</strong> o{" "}
+            <strong>lanzar productos y servicios</strong>.
           </li>
+          <span className={styles.services__tag}>Recomendado</span>
           <li>
             <span className={styles.services__badge}>3</span>
-            <strong>Pack completo:</strong> incluye branding, sitio web
-            multi-página, soporte técnico y optimización SEO inicial.
+            <strong>Pack digital completo:</strong> incluye{" "}
+            <strong>branding completo</strong>,{" "}
+            <strong>sitio web multi-página</strong>,{" "}
+            <strong>optimización SEO inicial</strong> y{" "}
+            <strong>soporte técnico básico</strong>. Ideal para marcas que
+            buscan una <strong>presencia sólida y escalable</strong>.
           </li>
         </ul>
       </div>

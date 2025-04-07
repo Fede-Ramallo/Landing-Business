@@ -47,6 +47,10 @@ dd {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   pointer-events: none;
 }
@@ -67,7 +71,12 @@ body {
 }
 
 /* Headings con fuente Playfair Display */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-playfair), serif;
 }
 
@@ -118,7 +127,7 @@ button {
   outline: none;
 }
 
-[class*='--round'] {
+[class*="--round"] {
   border-radius: 100%;
 }
 

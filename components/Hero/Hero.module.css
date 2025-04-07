@@ -14,41 +14,45 @@
   &__logo {
     & span {
       display: block;
-      width: 128px;
-      height: 128px;
+      width: 96px;
+      height: 96px;
       margin: 0 auto 1rem;
 
-      @media (--large) {
-        width: 256px;
-        height: 256px;
-      }
-
       & > svg {
-        width: 128px;
-        height: 128px;
-
-        @media (--large) {
-          width: 256px;
-          height: 256px;
-        }
+        width: 96px;
+        height: 96px;
 
         & > path {
           fill: var(--accent-2);
+        }
+      }
+
+      @media (--large) {
+        width: 128px;
+        height: 128px;
+
+        & > svg {
+          width: 128px;
+          height: 128px;
         }
       }
     }
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--font-tenor-sans);
     color: var(--accent-2);
     margin-bottom: 1rem;
+
+    @media (--large) {
+      font-size: 3rem;
+    }
   }
 
   &__slogan {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: var(--font-raleway);
     color: var(--dark-grey);
     line-height: 1.6;
@@ -58,13 +62,17 @@
       color: var(--accent-1);
       font-weight: 700;
     }
+
+    @media (--large) {
+      font-size: 1.25rem;
+    }
   }
 
   &__cta {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: var(--accent-2);
-    color: var(--white);
+    color: var(--white) !important;
     border-radius: 8px;
     font-weight: 500;
     transition: background-color 0.3s ease-in-out;

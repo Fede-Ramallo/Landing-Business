@@ -27,8 +27,16 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: var(--accent-3);
+        color: var(--accent-1);
       }
+    }
+  }
+
+  @media (--large) {
+
+    &__text,
+    &__credits {
+      font-size: 1rem;
     }
   }
 }

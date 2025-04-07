@@ -27,11 +27,11 @@ export default function Contact() {
               src="/icons/instagram.svg"
             />
             <a
-              href="https://www.instagram.com/tuusuario"
+              href="https://www.instagram.com/landings.cordoba/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @tuusuario
+              @landings.cordoba
             </a>
           </div>
           <div className={styles.contact__item}>
@@ -41,11 +41,11 @@ export default function Contact() {
               src="/icons/facebook.svg"
             />
             <a
-              href="https://www.facebook.com/tuusuario"
+              href="https://www.facebook.com/profile.php?id=61574772134133"
               target="_blank"
               rel="noopener noreferrer"
             >
-              /tuusuario
+              /LandingsCordoba
             </a>
           </div>
         </div>
