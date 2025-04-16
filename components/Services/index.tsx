@@ -12,9 +12,9 @@ const logos = [
     href: "https://gr-soluciones-electricas.netlify.app/",
   },
   {
-    src: "/images/verduleria.png",
+    src: "/images/puesto-18.png",
     alt: "Verduleria pelado",
-    href: "/empresas/verduleria",
+    href: "https://puesto-18.netlify.app",
   },
   {
     src: "/images/it.png",
